@@ -1,4 +1,3 @@
-// LChar.cc
 #include <iostream>
 #include <cstring>
 
