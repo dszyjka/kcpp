@@ -10,24 +10,24 @@ const double PI = 3.14;
 class Figura {
 public:
   virtual ~Figura() = default;
-  virtual double Pole() const = 0;
-  virtual double Obwod() const = 0;
-  virtual void Wypisz() const = 0;
+  virtual double pole() const = 0;
+  virtual double obwod() const = 0;
+  virtual void wypisz() const = 0;
 };
 
 class Kwadrat : public Figura {
 public:
   explicit Kwadrat(double bok) : bok(bok) {}
 
-  double Pole() const override {
+  double pole() const override {
     return bok * bok;
   }
 
-  double Obwod() const override {
+  double obwod() const override {
     return 4.0 * bok;
   }
 
-  void Wypisz() const override {
+  void wypisz() const override {
     cout << "Kwadrat, bok: " << bok;
   }
 
@@ -39,16 +39,16 @@ class Trojkat : public Figura {
 public:
   Trojkat(double a, double b, double c) : a(a), b(b), c(c) {}
 
-  double Pole() const override {
-    double p = Obwod() / 2.0;
+  double pole() const override {
+    double p = obwod() / 2.0;
     return sqrt(p * (p - a) * (p - b) * (p - c));
   }
 
-  double Obwod() const override {
+  double obwod() const override {
     return a + b + c;
   }
 
-  void Wypisz() const override {
+  void wypisz() const override {
     cout << "Trojkat, boki: " << a << ", " << b << ", " << c;
   }
 
@@ -63,15 +63,15 @@ public:
   Prostokat(double szerokosc, double wysokosc)
       : szerokosc(szerokosc), wysokosc(wysokosc) {}
 
-  double Pole() const override {
+  double pole() const override {
     return szerokosc * wysokosc;
   }
 
-  double Obwod() const override {
+  double obwod() const override {
     return 2.0 * (szerokosc + wysokosc);
   }
 
-  void Wypisz() const override {
+  void wypisz() const override {
     cout << "Prostokat, boki: " << szerokosc << ", " << wysokosc;
   }
 
@@ -84,22 +84,22 @@ class Kolo : public Figura {
 public:
   explicit Kolo(double promien) : promien(promien) {}
 
-  double Pole() const override {
+  double pole() const override {
     return PI * promien * promien;
   }
 
-  double Obwod() const override {
+  double obwod() const override {
     return 2.0 * PI * promien;
   }
 
-  double Dystans(double metryKwadratoweNaOsobe) const {
+  double dystans(double metryKwadratoweNaOsobe) const {
     if (metryKwadratoweNaOsobe <= 0.0) {
       return 0.0;
     }
     return sqrt(metryKwadratoweNaOsobe / PI);
   }
 
-  void Wypisz() const override {
+  void wypisz() const override {
     cout << "Kolo, promien: " << promien;
   }
 
@@ -115,15 +115,15 @@ int main() {
   figury.push_back(make_unique<Kolo>(3.0));
 
   for (const auto& figura : figury) {
-    figura->Wypisz();
-    cout << " -> pole: " << figura->Pole()
-         << ", obwod: " << figura->Obwod() << endl;
+    figura->wypisz();
+    cout << " -> pole: " << figura->pole()
+         << ", obwod: " << figura->obwod() << endl;
   }
 
   Kolo kolo(1.0);
   double limit = 4.0;
   cout << "Dla " << limit << " m^2 na osobe nastepna osoba moze byc w promieniu: "
-       << kolo.Dystans(limit) << " m" << endl;
+       << kolo.dystans(limit) << " m" << endl;
 
   return 0;
 }
