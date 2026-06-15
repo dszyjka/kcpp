@@ -5,19 +5,19 @@ using namespace std;
 
 Sek2Zwracanie::Sek2Zwracanie(): ZadKcpp("zwracanie", "2") {}
 
-int Sek2Zwracanie::returnVal(int a, int b) {return a + b;}
+int Sek2Zwracanie::returnVal(int a, int b) const {return a + b;}
 
-int& Sek2Zwracanie::returnRef(int& a, int b) {
+int& Sek2Zwracanie::returnRef(int& a, int b) const {
     a += b;
     return a;
 }
 
-int* Sek2Zwracanie::returnPointer(int* a, int b) {
+int* Sek2Zwracanie::returnPointer(int* a, int b) const {
     *a += b;
     return a;
 }
 
-int* Sek2Zwracanie::returnArr(int a) {
+int* Sek2Zwracanie::returnArr(int a) const {
     int* arr = new int[a];
 
     for (int i = 0; i < a; i++) {

@@ -9,10 +9,10 @@ class Sek2Zwracanie: public ZadKcpp {
         void start() override;
 
     private:
-        int returnVal(int a, int b);
-        int& returnRef(int& a, int b);
-        int* returnPointer(int* a, int b);
-        int* returnArr(int a);
+        int returnVal(int a, int b) const;
+        int& returnRef(int& a, int b) const;
+        int* returnPointer(int* a, int b) const;
+        int* returnArr(int a) const;
 };
 
 #endif
