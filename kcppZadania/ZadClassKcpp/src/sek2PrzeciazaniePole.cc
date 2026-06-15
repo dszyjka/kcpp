@@ -1,22 +1,17 @@
+#include "../include/sek2PrzeciazaniePole.h"
 #include <iostream>
 
 using namespace std;
 
-const double PI = 3.14;
+Sek2PrzeciazaniePole::Sek2PrzeciazaniePole(): ZadKcpp("Przeciazanie Pola", "2") {}
 
-double pole(float a) {
-    return a * a;
-}
+double Sek2PrzeciazaniePole::pole(float a) const {return a * a;}
 
-double pole(double a, double b) {
-    return a * b;
-}
+double Sek2PrzeciazaniePole::pole(double a, double b) const {return a * b;}
 
-double pole(double r) {
-    return PI * r * r;
-}
+double Sek2PrzeciazaniePole::pole(double r) const {return PI * r * r;}
 
-int main() {
+void Sek2PrzeciazaniePole::start() {
     float a = 10.0f;
     double b = 4;
     double r = 5;
@@ -31,6 +26,4 @@ int main() {
     cout << prostokat << endl;
     cout << "Pole kola" << endl;
     cout << kolo << endl;
-
-    return 0;
 }
