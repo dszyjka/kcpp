@@ -1,9 +1,7 @@
-#ifndef SEK5METODYABSRAKCYJNE_H
-#define SEK5METODYABSRAKCYJNE_H
+#ifndef SEK5METODYABSTRAKCYJNE_H
+#define SEK5METODYABSTRAKCYJNE_H
 
 #include "ZadKcpp.h"
-
-using namespace std;
 
 const double PI = 3.14;
 
@@ -17,7 +15,7 @@ public:
 
 class Kwadrat : public Figura {
 public:
-  explicit Kwadrat(double bok) : bok(bok) {}
+  explicit Kwadrat(double bok);
 
   double pole() const override;
   double obwod() const override;
@@ -29,7 +27,7 @@ private:
 
 class Trojkat : public Figura {
 public:
-  Trojkat(double a, double b, double c) : a(a), b(b), c(c) {}
+  Trojkat(double a, double b, double c);
 
   double pole() const override;
   double obwod() const override;
@@ -43,8 +41,7 @@ private:
 
 class Prostokat : public Figura {
 public:
-  Prostokat(double szerokosc, double wysokosc)
-      : szerokosc(szerokosc), wysokosc(wysokosc) {}
+  Prostokat(double szerokosc, double wysokosc);
 
   double pole() const override;
   double obwod() const override;
@@ -57,7 +54,7 @@ private:
 
 class Kolo : public Figura {
 public:
-  explicit Kolo(double promien) : promien(promien) {}
+  explicit Kolo(double promien);
 
   double pole() const override;
   double obwod() const override;

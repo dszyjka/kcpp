@@ -6,6 +6,7 @@
 
 using namespace std;
 
+Kwadrat::Kwadrat(double bok) : bok(bok) {}
 double Kwadrat::pole() const { return bok * bok; }
 double Kwadrat::obwod() const { return 4.0 * bok; }
 void Kwadrat::wypisz() const { cout << "Kwadrat, bok: " << bok << "\n"; }
@@ -14,21 +15,29 @@ double Trojkat::pole() const {
     double p = obwod() / 2.0;
     return sqrt(p * (p - a) * (p - b) * (p - c));
 }
+
+Trojkat::Trojkat(double a, double b, double c) : a(a), b(b), c(c) {}
 double Trojkat::obwod() const { return a + b + c; }
 void Trojkat::wypisz() const { cout << "Trojkat, boki: " << a << ", " << b << ", " << c << "\n"; }
+
+Prostokat::Prostokat(double szerokosc, double wysokosc)
+      : szerokosc(szerokosc), wysokosc(wysokosc) {}
 
 double Prostokat::pole() const { return szerokosc * wysokosc; }
 double Prostokat::obwod() const { return 2.0 * (szerokosc + wysokosc); }
 void Prostokat::wypisz() const { cout << "Prostokat, boki: " << szerokosc << ", " << wysokosc << "\n"; }
 
+Kolo::Kolo(double promien) : promien(promien) {}
 double Kolo::pole() const { return PI * promien * promien; }
 double Kolo::obwod() const { return 2.0 * PI * promien; }
+
 double Kolo::dystans(double metryKwadratoweNaOsobe) const {
     if (metryKwadratoweNaOsobe <= 0.0) {
         return 0.0;
     }
     return sqrt(metryKwadratoweNaOsobe / PI);
 }
+
 void Kolo::wypisz() const { cout << "Kolo, promien: " << promien << "\n"; }
 
 Sek5MetodyAbstrakcyjne::Sek5MetodyAbstrakcyjne() : ZadKcpp("Metody Abstrakcyjne", "5") {}
