@@ -22,7 +22,7 @@ void Konto::ZmienNumer(int nowyNumer) {
     }
 }
 
-Sek5ZadClass::Sek5ZadClass(): ZadKcpp("Zad Class", "5") {}
+Sek5ZadClass::Sek5ZadClass(): ZadKcpp("Zad Class", "5", "5.1") {}
 
 string Sek5ZadClass::opisZadania() const {return "Prosty program obiektowy";}
 

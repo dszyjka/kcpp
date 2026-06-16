@@ -40,7 +40,7 @@ double Kolo::dystans(double metryKwadratoweNaOsobe) const {
 
 void Kolo::wypisz() const { cout << "Kolo, promien: " << promien << "\n"; }
 
-Sek5MetodyAbstrakcyjne::Sek5MetodyAbstrakcyjne() : ZadKcpp("Metody Abstrakcyjne", "5") {}
+Sek5MetodyAbstrakcyjne::Sek5MetodyAbstrakcyjne() : ZadKcpp("Metody Abstrakcyjne", "5", "5.6") {}
 
 string Sek5MetodyAbstrakcyjne::opisZadania() const {return "Wykorzystanie metod abstrakcyjnych";}
 

@@ -7,17 +7,19 @@ using namespace std;
 
 class ZadKcpp {
     public:
-        ZadKcpp(const string& nazwa, const string& sekcjaZad);
+        ZadKcpp(const string& nazwa, const string& sekcjaZad, const string& numerWSekcji);
         virtual ~ZadKcpp();
 
         virtual void start() = 0;
         virtual string opisZadania() const = 0;
         string pobierzNazwe() const;
         string pobierzSekcje() const;
+        string pobierzNumerZadWSekcji() const;
 
     protected:
         string nazwaZad;
         string sekcja;
+        string numerZadWSekcji;
 };
 
 #endif

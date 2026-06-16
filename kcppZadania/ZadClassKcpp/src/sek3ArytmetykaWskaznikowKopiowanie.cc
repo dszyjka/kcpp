@@ -4,7 +4,7 @@
 using namespace std;
 
 Sek3ArytmetykaWskaznikowKopiowanie::Sek3ArytmetykaWskaznikowKopiowanie():
-    ZadKcpp("Arytmetyka Wskaznikow Kopiowanie", "3") {}
+    ZadKcpp("Arytmetyka Wskaznikow Kopiowanie", "3", "3.6") {}
 
     string Sek3ArytmetykaWskaznikowKopiowanie::opisZadania() const {
         return "Kopiowanie tablicy przy uzyciu wskaznikow";}

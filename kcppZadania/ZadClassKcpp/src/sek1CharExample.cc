@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Sek1CharExample::Sek1CharExample() : ZadKcpp("Char Example", "1") {}
+Sek1CharExample::Sek1CharExample() : ZadKcpp("Char Example", "1", "1.2") {}
 
 string Sek1CharExample::opisZadania() const {return "Przyklady funkcji z biblioteki cstring";}
 

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Sek2PrzeciazaniePole::Sek2PrzeciazaniePole(): ZadKcpp("Przeciazanie Pola", "2") {}
+Sek2PrzeciazaniePole::Sek2PrzeciazaniePole(): ZadKcpp("Przeciazanie Pola", "2", "2.2") {}
 
 string Sek2PrzeciazaniePole::opisZadania() const {return "Przeciazanie funkcji pole";}
 

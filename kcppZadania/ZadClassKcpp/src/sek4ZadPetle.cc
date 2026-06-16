@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Sek4ZadPetle::Sek4ZadPetle(): ZadKcpp("Zad Petle", "4") {}
+Sek4ZadPetle::Sek4ZadPetle(): ZadKcpp("Zad Petle", "4", "4.9") {}
 
 string Sek4ZadPetle::opisZadania() const {return "Demonstracja dzialania petli w C++";}
 

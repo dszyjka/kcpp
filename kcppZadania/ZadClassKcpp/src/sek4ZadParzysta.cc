@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Sek4ZadParzysta::Sek4ZadParzysta(): ZadKcpp("Zad Parzysta", "4") {}
+Sek4ZadParzysta::Sek4ZadParzysta(): ZadKcpp("Zad Parzysta", "4", "4.7") {}
 
 string Sek4ZadParzysta::opisZadania() const {return "Sprawdzanie parzystosci liczby";}
 
