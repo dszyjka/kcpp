@@ -6,6 +6,9 @@
 using namespace std;
 
 Sek1StringExample::Sek1StringExample(): ZadKcpp("String Example", "1") {}
+
+string Sek1StringExample::opisZadania() const {return "Przykładowe dzialąnia na danych typu string";}
+
 void Sek1StringExample::start() {
     string tekst = "Witaj Swiecie!";
     string drugiTekst = " C++ jest super.";

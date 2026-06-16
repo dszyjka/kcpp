@@ -5,6 +5,8 @@ using namespace std;
 
 Sek2Zwracanie::Sek2Zwracanie(): ZadKcpp("zwracanie", "2") {}
 
+string Sek2Zwracanie::opisZadania() const {return "Zwracanie przez wartosc, referencje, wskaznik i tablice";}
+
 int Sek2Zwracanie::returnVal(int a, int b) const {return a + b;}
 
 int& Sek2Zwracanie::returnRef(int& a, int b) const {

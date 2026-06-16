@@ -7,6 +7,7 @@ class Sek3ArytmetykaWskaznikowPrzesuniecie: public ZadKcpp {
     public:
         Sek3ArytmetykaWskaznikowPrzesuniecie();
         void start() override;
+        string opisZadania() const override;
 
     private:
         void przesun(int* tablica, int rozmiar) const;

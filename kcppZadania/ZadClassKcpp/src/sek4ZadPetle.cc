@@ -5,6 +5,8 @@ using namespace std;
 
 Sek4ZadPetle::Sek4ZadPetle(): ZadKcpp("Zad Petle", "4") {}
 
+string Sek4ZadPetle::opisZadania() const {return "Demonstracja dzialania petli w C++";}
+
 void Sek4ZadPetle::petlaWhile() const {
     int i = 0;
 

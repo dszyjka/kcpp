@@ -7,6 +7,7 @@ class Sek4ZadParzysta: public ZadKcpp {
     public:
         Sek4ZadParzysta();
         void start() override;
+        string opisZadania() const override;
 
     private:
         bool parzystaBitowo(int liczba) const;

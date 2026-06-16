@@ -7,6 +7,7 @@ class Sek1StringExample: public ZadKcpp {
     public:
         Sek1StringExample();
         void start() override;
+        string opisZadania() const override;
 };
 
 #endif

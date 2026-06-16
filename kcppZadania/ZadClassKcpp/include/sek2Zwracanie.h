@@ -7,6 +7,7 @@ class Sek2Zwracanie: public ZadKcpp {
     public:
         Sek2Zwracanie();
         void start() override;
+        string opisZadania() const override;
 
     private:
         int returnVal(int a, int b) const;

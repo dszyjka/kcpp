@@ -7,6 +7,7 @@ class Sek4ZadPetle: public ZadKcpp {
     public:
         Sek4ZadPetle();
         void start() override;
+        string opisZadania() const override;
 
     private:
         void petlaWhile() const;

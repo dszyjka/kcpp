@@ -8,6 +8,7 @@ class Sek2PrzeciazaniePole: public ZadKcpp {
     public:
         Sek2PrzeciazaniePole();
         void start() override;
+        string opisZadania() const override;
         
     private:
         const double PI = 3.14;

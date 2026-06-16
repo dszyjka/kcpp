@@ -11,6 +11,7 @@ class ZadKcpp {
         virtual ~ZadKcpp();
 
         virtual void start() = 0;
+        virtual string opisZadania() const = 0;
         string pobierzNazwe() const;
         string pobierzSekcje() const;
 

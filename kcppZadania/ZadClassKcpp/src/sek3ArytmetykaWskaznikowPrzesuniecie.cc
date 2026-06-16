@@ -6,6 +6,10 @@ using namespace std;
 Sek3ArytmetykaWskaznikowPrzesuniecie::Sek3ArytmetykaWskaznikowPrzesuniecie(): 
     ZadKcpp("Arytmetyka Wskaznikow Przesuniecie", "3") {}
 
+string Sek3ArytmetykaWskaznikowPrzesuniecie::opisZadania() const {
+    return "Presuwanie elementow tablicy w prawo za pomoca wskaznikow";
+}
+
 void Sek3ArytmetykaWskaznikowPrzesuniecie::przesun(int* tablica, int rozmiar) const {
     if (rozmiar <= 1) {
         return;

@@ -42,6 +42,8 @@ void Kolo::wypisz() const { cout << "Kolo, promien: " << promien << "\n"; }
 
 Sek5MetodyAbstrakcyjne::Sek5MetodyAbstrakcyjne() : ZadKcpp("Metody Abstrakcyjne", "5") {}
 
+string Sek5MetodyAbstrakcyjne::opisZadania() const {return "Wykorzystanie metod abstrakcyjnych";}
+
 void Sek5MetodyAbstrakcyjne::start() {
     vector<unique_ptr<Figura>> figury;
     figury.push_back(make_unique<Kwadrat>(4.0));

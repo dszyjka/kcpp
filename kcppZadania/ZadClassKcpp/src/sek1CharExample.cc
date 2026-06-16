@@ -6,6 +6,8 @@ using namespace std;
 
 Sek1CharExample::Sek1CharExample() : ZadKcpp("Char Example", "1") {}
 
+string Sek1CharExample::opisZadania() const {return "Przyklady funkcji z biblioteki cstring";}
+
 void Sek1CharExample::start() {
     char text1[50] = "Programming";
     char text2[50] = " in C++";

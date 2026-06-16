@@ -5,6 +5,8 @@ using namespace std;
 
 Sek4ZadParzysta::Sek4ZadParzysta(): ZadKcpp("Zad Parzysta", "4") {}
 
+string Sek4ZadParzysta::opisZadania() const {return "Sprawdzanie parzystosci liczby";}
+
 bool Sek4ZadParzysta::parzystaBitowo(int liczba) const{
     // Przykład: 6 & 1 = 0, więc 6 jest parzyste; 7 & 1 = 1, więc 7 jest nieparzyste.
     return (liczba & 1) == 0;

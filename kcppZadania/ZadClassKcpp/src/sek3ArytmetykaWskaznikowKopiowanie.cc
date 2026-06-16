@@ -6,6 +6,9 @@ using namespace std;
 Sek3ArytmetykaWskaznikowKopiowanie::Sek3ArytmetykaWskaznikowKopiowanie():
     ZadKcpp("Arytmetyka Wskaznikow Kopiowanie", "3") {}
 
+    string Sek3ArytmetykaWskaznikowKopiowanie::opisZadania() const {
+        return "Kopiowanie tablicy przy uzyciu wskaznikow";}
+
 void Sek3ArytmetykaWskaznikowKopiowanie::kopiujTablice(int* zrodlo, int* cel, int rozmiar) const {
     for (int* p = zrodlo, *q = cel; p < zrodlo + rozmiar; ++p, ++q) {*q = *p;}
 }

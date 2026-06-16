@@ -69,6 +69,7 @@ class Sek5MetodyAbstrakcyjne : public ZadKcpp {
 public:
     Sek5MetodyAbstrakcyjne();
     void start() override;
+    string opisZadania() const override;
 };
 
 #endif

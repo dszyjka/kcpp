@@ -58,6 +58,7 @@ class Sek5ZadClass: public ZadKcpp {
     public:
         Sek5ZadClass();
         void start() override;
+        string opisZadania() const override;
 };
 
 #endif

@@ -23,6 +23,9 @@ void Konto::ZmienNumer(int nowyNumer) {
 }
 
 Sek5ZadClass::Sek5ZadClass(): ZadKcpp("Zad Class", "5") {}
+
+string Sek5ZadClass::opisZadania() const {return "Prosty program obiektowy";}
+
 void Sek5ZadClass::start() {
     Konto konto("Jan", 250.0);
     konto.Wplac(50.0);

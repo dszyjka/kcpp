@@ -7,6 +7,7 @@ class Sek3ArytmetykaWskaznikowKopiowanie: public ZadKcpp {
     public:
         Sek3ArytmetykaWskaznikowKopiowanie();
         void start() override;
+        string opisZadania() const override;
 
     private:
         void kopiujTablice(int* zrodlo, int* cel, int rozmiar) const;
