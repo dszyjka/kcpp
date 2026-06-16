@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Sek2Zwracanie::Sek2Zwracanie(): ZadKcpp("zwracanie", "2", "2.1") {}
+Sek2Zwracanie::Sek2Zwracanie(): ZadKcpp("Zwracanie", "2", "2.1") {}
 
 string Sek2Zwracanie::opisZadania() const {return "Zwracanie przez wartosc, referencje, wskaznik i tablice";}
 
