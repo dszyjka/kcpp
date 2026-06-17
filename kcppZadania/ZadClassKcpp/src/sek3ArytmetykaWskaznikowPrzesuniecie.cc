@@ -7,7 +7,7 @@ Sek3ArytmetykaWskaznikowPrzesuniecie::Sek3ArytmetykaWskaznikowPrzesuniecie():
     ZadKcpp("Arytmetyka Wskaznikow Przesuniecie", "3", "3.4") {}
 
 string Sek3ArytmetykaWskaznikowPrzesuniecie::opisZadania() const {
-    return "Presuwanie elementow tablicy w prawo za pomoca wskaznikow";
+    return "Przesuwanie elementow tablicy w prawo za pomoca wskaznikow";
 }
 
 void Sek3ArytmetykaWskaznikowPrzesuniecie::przesun(int* tablica, int rozmiar) const {

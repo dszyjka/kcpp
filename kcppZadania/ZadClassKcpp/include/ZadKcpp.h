@@ -3,23 +3,21 @@
 
 #include <string>
 
-using namespace std;
-
 class ZadKcpp {
     public:
-        ZadKcpp(const string& nazwa, const string& sekcjaZad, const string& numerWSekcji);
+        ZadKcpp(const std::string& nazwa, const std::string& sekcjaZad, const std::string& numerWSekcji);
         virtual ~ZadKcpp();
 
         virtual void start() = 0;
-        virtual string opisZadania() const = 0;
-        string pobierzNazwe() const;
-        string pobierzSekcje() const;
-        string pobierzNumerZadWSekcji() const;
+        virtual std::string opisZadania() const = 0;
+        std::string pobierzNazwe() const;
+        std::string pobierzSekcje() const;
+        std::string pobierzNumerZadWSekcji() const;
 
     protected:
-        string nazwaZad;
-        string sekcja;
-        string numerZadWSekcji;
+        std::string nazwaZad;
+        std::string sekcja;
+        std::string numerZadWSekcji;
 };
 
 #endif
